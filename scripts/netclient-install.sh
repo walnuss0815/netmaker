@@ -139,6 +139,9 @@ case $(uname | tr '[:upper:]' '[:lower:]') in
 			mips)
         dist=netclient-mips
 			;;
+			mips-softfloat)
+        dist=netclient-mips-softfloat
+			;;
 			*)
 				fatal "$CPU_ARCH : cpu architecture not supported"
     		esac
