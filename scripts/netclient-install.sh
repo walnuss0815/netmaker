@@ -118,23 +118,26 @@ case $(uname | tr '[:upper:]' '[:lower:]') in
 			x86_64)
 				dist=netclient
 			;;
-                        x86_32)
-                                dist=netclient-32
-                        ;;
+			x86_32)
+				dist=netclient-32
+			;;
  			arm64)
 				dist=netclient-arm64
 			;;
 			aarch64)
-                                dist=netclient-arm64
+        dist=netclient-arm64
 			;;
 			armv7l)
-                                dist=netclient-arm7
+        dist=netclient-arm7
 			;;
 			arm*)
 				dist=netclient-$CPU_ARCH
 			;;
-                        mipsle)
-                                dist=netclient-mipsle
+			mipsle)
+        dist=netclient-mipsle
+			;;
+			mips)
+        dist=netclient-mips
 			;;
 			*)
 				fatal "$CPU_ARCH : cpu architecture not supported"
