@@ -139,7 +139,7 @@ case $(uname | tr '[:upper:]' '[:lower:]') in
 			mips)
         dist=netclient-mips
 			;;
-			mips-softfloat)
+			mipssoftfloat)
         dist=netclient-mips-softfloat
 			;;
 			*)
